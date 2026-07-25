@@ -14,7 +14,7 @@ export const projects = [
       "Docker",
     ],
     image: "/src/assets/img/projects/kinrural.png",
-    repoUrl: "https://github.com/tu-usuario/kinrural",
+    repoUrl: "https://github.com/breynerbd/kinRural-server-admin",
     demoUrl: "",
     gallery: [
       "/src/assets/img/projects/kinrural1.png",
@@ -43,7 +43,7 @@ La aplicación implementa reglas de negocio financieras como cálculo de interes
       "MongoDB",
     ],
     image: "/src/assets/img/projects/kafetery.png",
-    repoUrl: "https:github.com/tu-usuario/kafetery",
+    repoUrl: "https://github.com/breynerbd/kafetery-server-admin",
     demoUrl: "",
     gallery: [
       "/src/assets/img/projects/kafetery1.png",
@@ -70,7 +70,7 @@ Cuenta con funcionalidades como control de inventario, seguimiento de ventas, ap
       "MongoDB",
     ],
     image: "/src/assets/img/projects/sekurity.png",
-    repoUrl: "https://github.com/tu-usuario/sekurity",
+    repoUrl: "https://github.com/breynerbd/sekurity-server-admin",
     demoUrl: "",
     gallery: [],
     longDescription: `Sekurity es una plataforma orientada a la gestión de seguridad y participación ciudadana desarrollada con una arquitectura de microservicios. El sistema permite a los usuarios generar reportes, agregar comentarios, calificar incidentes y consultar información relacionada con zonas y estadísticas, mientras que los administradores pueden supervisar y moderar el contenido generado.

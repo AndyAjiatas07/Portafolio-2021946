@@ -44,6 +44,7 @@ export const AboutPage = () => {
                 onError={(e) => (e.currentTarget.style.display = "none")}
               />
             </div>
+
             <ul className="about__strengths">
               {STRENGTHS.map((s) => (
                 <li key={s}>{s}</li>
@@ -70,20 +71,53 @@ export const AboutPage = () => {
               {tab === "perfil" && (
                 <div className="about__profile">
                   <p>
-                    Soy Andy Ariel Ajiatas Xiquin, estudiante de Perito en
-                    Computación en el Centro Educativo Técnico Laboral KINAL,
-                    con un fuerte interés en el desarrollo de software,
-                    especialmente en el desarrollo web y de aplicaciones. Me
-                    considero una persona organizada, responsable y con una
-                    mentalidad de mejora continua, siempre buscando aprender
-                    nuevas tecnologías y crear soluciones que generen valor.
+                    Soy <strong>Andy Ariel Ajiatas Xiquin</strong>, estudiante
+                    de
+                    <strong> Perito en Computación</strong> en el Centro
+                    Educativo Técnico Laboral KINAL y desarrollador Full Stack
+                    en formación. Me apasiona el desarrollo de software y la
+                    posibilidad de crear soluciones que aporten valor a las
+                    personas mediante la tecnología. Disfruto aprender nuevas
+                    herramientas, mejorar mis habilidades y enfrentar retos que
+                    me permitan crecer tanto en el ámbito técnico como personal.
                   </p>
+
                   <p>
-                    Disfruto enfrentar desafíos técnicos, trabajar en equipo y
-                    transformar ideas en proyectos funcionales. Mi objetivo es
-                    seguir creciendo como desarrollador, especializarme en
-                    ingeniería de software y participar en proyectos que tengan
-                    un impacto real.
+                    Durante mi formación he trabajado en diversos proyectos de
+                    desarrollo web, aplicaciones móviles y sistemas backend,
+                    utilizando tecnologías modernas como React, React Native,
+                    Node.js, Express, Java, .NET, PostgreSQL y MongoDB. Cada
+                    proyecto me ha permitido fortalecer mis conocimientos sobre
+                    arquitectura de software, consumo de APIs, bases de datos,
+                    control de versiones y buenas prácticas de desarrollo.
+                  </p>
+
+                  <p>
+                    Me considero una persona organizada, responsable y
+                    disciplinada. Disfruto analizar problemas, investigar
+                    diferentes alternativas y encontrar soluciones eficientes.
+                    Creo firmemente que el aprendizaje continuo es una de las
+                    habilidades más importantes dentro del mundo tecnológico,
+                    por lo que siempre busco mantenerme actualizado y aprender
+                    nuevas metodologías, herramientas y tecnologías.
+                  </p>
+
+                  <p>
+                    Además de la programación, me interesa el crecimiento
+                    personal, las finanzas, la productividad y el trabajo
+                    inteligente. También practico gimnasio de forma constante,
+                    una actividad que me ha ayudado a desarrollar disciplina,
+                    constancia y compromiso, cualidades que aplico tanto en mi
+                    vida personal como en cada uno de mis proyectos.
+                  </p>
+
+                  <p>
+                    Mi objetivo es continuar desarrollándome como profesional,
+                    especializarme en Ingeniería de Software y participar en
+                    proyectos que representen desafíos reales. Aspiro a
+                    construir soluciones escalables, seguir aprendiendo de otros
+                    desarrolladores y aportar valor mediante aplicaciones bien
+                    diseñadas, funcionales y orientadas a resolver problemas.
                   </p>
                 </div>
               )}

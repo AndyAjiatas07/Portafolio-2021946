@@ -5,19 +5,19 @@ const LINKS = [
   {
     key: "linkedin",
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/tu-usuario",
+    href: "https://www.linkedin.com/in/andy-ajiatas-92688b422/",
     hint: "Conecta conmigo profesionalmente",
   },
   {
-    key: "computrabajo",
-    label: "CompuTrabajo",
-    href: "https://www.computrabajo.com.gt/tu-perfil",
-    hint: "Revisa mi perfil laboral",
+    key: "email",
+    label: "Email",
+    href: "mailto:aajiatas-2021496@kinal.edu.gt",
+    hint: "Enviame un correo",
   },
   {
     key: "github",
     label: "GitHub",
-    href: "https://github.com/tu-usuario",
+    href: "https://github.com/AndyAjiatas07",
     hint: "Explora mi código",
   },
 ];
