@@ -1,0 +1,34 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12.5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badge--frontend {
+  color: var(--layer-frontend);
+  background: color-mix(in srgb, var(--layer-frontend) 12%, transparent);
+  border-color: color-mix(in srgb, var(--layer-frontend) 30%, transparent);
+}
+
+.badge--backend {
+  color: var(--layer-backend);
+  background: color-mix(in srgb, var(--layer-backend) 12%, transparent);
+  border-color: color-mix(in srgb, var(--layer-backend) 30%, transparent);
+}
+
+.badge--database {
+  color: var(--layer-database);
+  background: color-mix(in srgb, var(--layer-database) 14%, transparent);
+  border-color: color-mix(in srgb, var(--layer-database) 32%, transparent);
+}
+
+.badge--tools {
+  color: var(--layer-tools);
+  background: color-mix(in srgb, var(--layer-tools) 14%, transparent);
+  border-color: color-mix(in srgb, var(--layer-tools) 32%, transparent);
+}

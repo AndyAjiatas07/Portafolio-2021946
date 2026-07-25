@@ -1,0 +1,116 @@
+:root {
+  /* Base tokens (misma gama que el proyecto Vite por defecto) */
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #ffffff;
+  --bg-alt: #f7f5fb;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --shadow-lg: rgba(20, 10, 40, 0.14) 0 20px 40px -8px;
+
+  /* Paleta extendida: cada franja del stack tiene su propio acento.
+     Esto se usa como lenguaje visual recurrente (hero, skills, badges). */
+  --layer-frontend: #aa3bff; /* violeta — igual al accent por defecto */
+  --layer-backend: #14b8a6; /* teal */
+  --layer-languages: #ec4899;
+  --layer-database: #f2a93b; /* ámbar */
+  --layer-tools: #64748b; /* slate */
+
+  --sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: "Space Grotesk", system-ui, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  font: 17px/1.6 var(--sans);
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #a3a0ab;
+    --text-h: #f3f1f7;
+    --bg: #0f0d15;
+    --bg-alt: #17141f;
+    --border: #2a2733;
+    --code-bg: #1c1926;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.14);
+    --accent-border: rgba(192, 132, 252, 0.45);
+    --social-bg: rgba(42, 39, 51, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.45) 0 10px 15px -3px, rgba(0, 0, 0, 0.3) 0 4px 6px -2px;
+    --shadow-lg: rgba(0, 0, 0, 0.55) 0 24px 48px -10px;
+    --layer-frontend: #c084fc;
+    --layer-languages: #ed75b1;
+    --layer-backend: #2dd4bf;
+    --layer-database: #fbbf59;
+    --layer-tools: #94a3b8;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+code,
+.mono {
+  font-family: var(--mono);
+}
+
+::selection {
+  background: var(--accent-bg);
+  color: var(--text-h);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

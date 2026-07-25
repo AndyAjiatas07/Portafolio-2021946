@@ -1,0 +1,245 @@
+.projects {
+  padding: 96px 24px;
+}
+
+.projects__inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--bg);
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card__thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 210px;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(
+    135deg,
+    var(--layer-frontend),
+    var(--layer-backend)
+  );
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s;
+}
+
+.project-card__thumb:hover img {
+  transform: scale(1.05);
+}
+
+.project-card__thumb-label {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 8px;
+  font-size: 12.5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.project-card__thumb:hover .project-card__thumb-label {
+  opacity: 1;
+}
+
+.project-card__thumb--empty::after {
+  content: "📁 sin captura aún";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+}
+
+.project-card__body {
+  padding: 20px;
+}
+
+.project-card__body h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.project-card__body p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  min-height: 44px;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.project-card__links {
+  display: flex;
+  gap: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.project-card__links a {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-card__links a:hover {
+  text-decoration: underline;
+}
+
+/* Página de detalle de proyecto */
+.project-detail {
+  padding: 56px 24px 96px;
+}
+
+.project-detail--empty {
+  text-align: center;
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.project-detail__inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.project-detail__back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 13.5px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-detail__back:hover {
+  text-decoration: underline;
+}
+
+.project-detail__cover-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 460px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: linear-gradient(
+    135deg,
+    var(--layer-frontend),
+    var(--layer-backend)
+  );
+  overflow: hidden;
+  padding: 16px;
+}
+
+.project-detail__cover {
+  width: 100%;
+  max-height: 428px;
+  object-fit: contain;
+}
+
+.contact__foot {
+  font-size: 13px;
+  color: var(--text);
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+.project-detail__body {
+  padding-top: 28px;
+}
+
+.project-detail__body h1 {
+  font-size: clamp(26px, 3.4vw, 34px);
+  margin-bottom: 14px;
+}
+
+.project-detail__body p {
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+
+.project-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.project-detail__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.project-detail__gallery img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+}
+
+.project-detail__links {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.project-detail__links a {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
