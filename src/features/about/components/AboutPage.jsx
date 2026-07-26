@@ -39,7 +39,7 @@ export const AboutPage = () => {
           <aside className="about__side">
             <div className="about__photo">
               <img
-                src="/src/assets/img/profile.jpg"
+                src="/img/profile.jpg"
                 alt="Foto de Andy Ajiatas"
                 onError={(e) => (e.currentTarget.style.display = "none")}
               />

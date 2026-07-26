@@ -13,15 +13,40 @@ export const projects = [
       "PostgreSQL",
       "Docker",
     ],
-    image: "/src/assets/img/projects/kinrural.png",
-    repoUrl: "https://github.com/breynerbd/kinRural-server-admin",
+    image: "/img/projects/kinrural.png",
+    repos: [
+      {
+        label: "server-admin",
+        url: "https://github.com/breynerbd/kinRural-server-admin",
+      },
+      {
+        label: "client-admin",
+        url: "https://github.com/breynerbd/kinRural-client-admin",
+      },
+      {
+        label: "server-user",
+        url: "https://github.com/breynerbd/kinRural-server-user",
+      },
+      {
+        label: "auth-service",
+        url: "https://github.com/breynerbd/kinRural-auth-service",
+      },
+      {
+        label: "client-user",
+        url: "https://github.com/breynerbd/kinRural-client-user",
+      },
+      {
+        label: "stack",
+        url: "https://github.com/breynerbd/kinRural-stack",
+      },
+    ],
     demoUrl: "",
     gallery: [
-      "/src/assets/img/projects/kinrural1.png",
-      "/src/assets/img/projects/kinrural2.png",
-      "/src/assets/img/projects/kinrural3.png",
-      "/src/assets/img/projects/kinrural4.png",
-      "/src/assets/img/projects/kinrural5.png",
+      "/img/projects/kinrural1.png",
+      "/img/projects/kinrural2.png",
+      "/img/projects/kinrural3.png",
+      "/img/projects/kinrural4.png",
+      "/img/projects/kinrural5.png",
     ],
     longDescription: `KinRural es una plataforma bancaria rural desarrollada con una arquitectura basada en microservicios que integra un panel administrativo y un portal de clientes. El proyecto permite gestionar usuarios, cuentas bancarias, solicitudes, préstamos, tarjetas y transacciones mediante APIs REST construidas con Node.js, Express, Sequelize y PostgreSQL.
 
@@ -42,13 +67,34 @@ La aplicación implementa reglas de negocio financieras como cálculo de interes
       "Mongoose",
       "MongoDB",
     ],
-    image: "/src/assets/img/projects/kafetery.png",
-    repoUrl: "https://github.com/breynerbd/kafetery-server-admin",
+    image: "/img/projects/kafetery.png",
+    repos: [
+      {
+        label: "server-admin",
+        url: "https://github.com/breynerbd/kafetery-server-admin",
+      },
+      {
+        label: "client-admin",
+        url: "https://github.com/breynerbd/kafetery-client-admin",
+      },
+      {
+        label: "server-user",
+        url: "https://github.com/breynerbd/kafetery-server-user",
+      },
+      {
+        label: "auth-service",
+        url: "https://github.com/breynerbd/kafetery-auth-service",
+      },
+      {
+        label: "client-user",
+        url: "https://github.com/breynerbd/kafetery-client-user",
+      },
+    ],
     demoUrl: "",
     gallery: [
-      "/src/assets/img/projects/kafetery1.png",
-      "/src/assets/img/projects/kafetery2.png",
-      "/src/assets/img/projects/kafetery3.png",
+      "/img/projects/kafetery1.png",
+      "/img/projects/kafetery2.png",
+      "/img/projects/kafetery3.png",
     ],
     longDescription: `Kafetery es un sistema de gestión gastronómica diseñado para digitalizar la operación de restaurantes mediante dos servicios principales: un panel administrativo y un portal orientado a clientes. El proyecto permite administrar restaurantes, menús, órdenes, promociones, reservaciones, mesas y usuarios utilizando Node.js, Express.js, MongoDB y Mongoose.
 
@@ -69,8 +115,29 @@ Cuenta con funcionalidades como control de inventario, seguimiento de ventas, ap
       "Mongoose",
       "MongoDB",
     ],
-    image: "/src/assets/img/projects/sekurity.png",
-    repoUrl: "https://github.com/breynerbd/sekurity-server-admin",
+    image: "/img/projects/sekurity.png",
+    repos: [
+      {
+        label: "server-admin",
+        url: "https://github.com/breynerbd/sekurity-server-admin",
+      },
+      {
+        label: "client-admin",
+        url: "https://github.com/breynerbd/sekurity-client-admin",
+      },
+      {
+        label: "server-user",
+        url: "https://github.com/breynerbd/sekurity-server-user",
+      },
+      {
+        label: "auth-service",
+        url: "https://github.com/breynerbd/sekurity-auth-service",
+      },
+      {
+        label: "client-user",
+        url: "https://github.com/breynerbd/sekurity-client-user",
+      },
+    ],
     demoUrl: "",
     gallery: [],
     longDescription: `Sekurity es una plataforma orientada a la gestión de seguridad y participación ciudadana desarrollada con una arquitectura de microservicios. El sistema permite a los usuarios generar reportes, agregar comentarios, calificar incidentes y consultar información relacionada con zonas y estadísticas, mientras que los administradores pueden supervisar y moderar el contenido generado.
@@ -83,14 +150,14 @@ El proyecto utiliza Node.js, Express.js, PostgreSQL, Sequelize y Docker, impleme
     description:
       "Sistema de gestión veterinaria desarrollado para optimizar los procesos administrativos y médicos de una clínica mediante una aplicación de escritorio con control de clientes, mascotas, citas y operaciones internas.",
     skills: ["Java", "JavaFX", "MySQL", "JDBC"],
-    image: "/src/assets/img/projects/vetnova.png",
+    image: "/img/projects/vetnova.png",
     repoUrl: "https://github.com/AndyAjiatas07/VeterinariaFXApp2021496",
     demoUrl: "",
     gallery: [
-      "/src/assets/img/projects/vetnova1.png",
-      "/src/assets/img/projects/vetnova2.png",
-      "/src/assets/img/projects/vetnova3.png",
-      "/src/assets/img/projects/vetnova4.png",
+      "/img/projects/vetnova1.png",
+      "/img/projects/vetnova2.png",
+      "/img/projects/vetnova3.png",
+      "/img/projects/vetnova4.png",
     ],
     longDescription: `VetNova es una aplicación de escritorio desarrollada en JavaFX con arquitectura MVC y conexión a una base de datos MySQL, diseñada para mejorar la administración de una clínica veterinaria mediante una solución informática organizada y eficiente.
 
@@ -113,15 +180,15 @@ Además del desarrollo del sistema, el proyecto incluye un análisis financiero 
       "MapStruct",
       "Lombok",
     ],
-    image: "/src/assets/img/projects/gestoreventos.png",
+    image: "/img/projects/gestoreventos.png",
     repoUrl:
       "https://github.com/GianCordova/Organizador-Eventos-Nexus/tree/main",
     demoUrl: "",
     gallery: [
-      "/src/assets/img/projects/gestoreventos1.png",
-      "/src/assets/img/projects/gestoreventos2.png",
-      "/src/assets/img/projects/gestoreventos3.png",
-      "/src/assets/img/projects/gestoreventos4.png",
+      "/img/projects/gestoreventos1.png",
+      "/img/projects/gestoreventos2.png",
+      "/img/projects/gestoreventos3.png",
+      "/img/projects/gestoreventos4.png",
     ],
     longDescription: `EventHub es una plataforma diseñada para centralizar la planificación y administración de eventos, facilitando la coordinación entre organizadores, proveedores e invitados en un solo sistema. La aplicación permite gestionar eventos de principio a fin, controlando recursos, servicios contratados, listas de invitados, asistencia y costos asociados para mejorar la organización y optimizar la toma de decisiones.
 
@@ -133,13 +200,10 @@ Además de simplificar la logística de cada evento, el sistema proporciona un c
     description:
       "Juego interactivo del clásico Ahorcado desarrollado para fortalecer la lógica de programación mediante una experiencia dinámica y accesible desde el navegador.",
     skills: ["HTML", "CSS", "JavaScript"],
-    image: "/src/assets/img/projects/ahorcado1.png",
+    image: "/img/projects/ahorcado1.png",
     repoUrl: "https://github.com/AndyAjiatas07/AhorcadoJs",
     demoUrl: "",
-    gallery: [
-      "/src/assets/img/projects/ahorcado2.png",
-      "/src/assets/img/projects/ahorcado3.png",
-    ],
+    gallery: ["/img/projects/ahorcado2.png", "/img/projects/ahorcado3.png"],
     longDescription: `AhorcadoJS es una aplicación web inspirada en el clásico juego del Ahorcado, desarrollada para ofrecer una experiencia interactiva y entretenida directamente desde el navegador. El jugador debe descubrir una palabra secreta antes de agotar sus intentos, utilizando tanto el teclado físico como un teclado virtual integrado en la interfaz.
 
 El juego selecciona palabras de forma aleatoria, muestra el progreso del jugador en tiempo real y representa gráficamente el avance del ahorcado mediante el elemento Canvas. Además, incorpora validación de letras repetidas, mensajes de victoria o derrota y la posibilidad de reiniciar la partida en cualquier momento, ofreciendo una experiencia fluida y sencilla enfocada en la lógica y la interacción con el usuario.`,
@@ -159,13 +223,22 @@ El juego selecciona palabras de forma aleatoria, muestra el progreso del jugador
       "Mongoose",
       "JWT",
     ],
-    image: "/src/assets/img/projects/opina2.png",
-    repoUrl: "https://github.com/AndyAjiatas07/gestor-de-opiniones-backend",
+    image: "/img/projects/opina2.png",
+    repos: [
+      {
+        label: "backend",
+        url: "https://github.com/AndyAjiatas07/gestor-de-opiniones-backend",
+      },
+      {
+        label: "frontend",
+        url: "https://github.com/AndyAjiatas07/gestor-de-opiniones-frontend",
+      },
+    ],
     demoUrl: "",
     gallery: [
-      "/src/assets/img/projects/opina1.png",
-      "/src/assets/img/projects/opina3.png",
-      "/src/assets/img/projects/opina4.png",
+      "/img/projects/opina1.png",
+      "/img/projects/opina3.png",
+      "/img/projects/opina4.png",
     ],
     longDescription: `OpinaNet es una plataforma web orientada a la creación y gestión de publicaciones, diseñada para fomentar la interacción entre usuarios mediante contenido y comentarios. Cada usuario puede registrarse, administrar su perfil, crear publicaciones, compartir opiniones y participar en conversaciones dentro de la comunidad.
 

@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { Badge } from '../../../shared/components/ui/Badge'
+import { Link } from "react-router-dom";
+import { Badge } from "../../../shared/components/ui/Badge";
 
 export const ProjectCard = ({ project }) => {
   return (
@@ -9,8 +9,10 @@ export const ProjectCard = ({ project }) => {
           src={project.image}
           alt={`Captura de ${project.title}`}
           onError={(e) => {
-            e.currentTarget.style.display = 'none'
-            e.currentTarget.parentElement.classList.add('project-card__thumb--empty')
+            e.currentTarget.style.display = "none";
+            e.currentTarget.parentElement.classList.add(
+              "project-card__thumb--empty",
+            );
           }}
         />
         <span className="project-card__thumb-label mono">Ver detalle</span>
@@ -27,9 +29,21 @@ export const ProjectCard = ({ project }) => {
           ))}
         </div>
         <div className="project-card__links">
-          <a href={project.repoUrl} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
+          {/* Si tiene el arreglo de repositorios, los recorre todos */}
+          {project.repos &&
+            project.repos.map((repo, idx) => (
+              <a key={idx} href={repo.url} target="_blank" rel="noreferrer">
+                {repo.label}
+              </a>
+            ))}
+
+          {/* Si no tiene el arreglo pero tiene la url vieja, muestra el clásico 'GitHub' */}
+          {!project.repos && project.repoUrl && (
+            <a href={project.repoUrl} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          )}
+
           {project.demoUrl && (
             <a href={project.demoUrl} target="_blank" rel="noreferrer">
               Demo
@@ -38,5 +52,5 @@ export const ProjectCard = ({ project }) => {
         </div>
       </div>
     </article>
-  )
-}
+  );
+};

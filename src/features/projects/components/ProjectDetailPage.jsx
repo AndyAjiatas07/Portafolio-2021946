@@ -54,14 +54,32 @@ export const ProjectDetailPage = () => {
           )}
 
           <div className="project-detail__links">
-            <a
-              className="btn btn--primary"
-              href={project.repoUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ver repositorio
-            </a>
+            {/* Renderiza múltiples repositorios si existen */}
+            {project.repos &&
+              project.repos.map((repo, idx) => (
+                <a
+                  key={idx}
+                  className="btn btn--primary"
+                  href={repo.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repo: {repo.label}
+                </a>
+              ))}
+
+            {/* Mantiene compatibilidad con el formato viejo si no hay arreglo */}
+            {!project.repos && project.repoUrl && (
+              <a
+                className="btn btn--primary"
+                href={project.repoUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver repositorio
+              </a>
+            )}
+
             {project.demoUrl && (
               <a
                 className="btn btn--ghost"
